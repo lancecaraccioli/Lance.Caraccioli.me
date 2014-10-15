@@ -22,6 +22,10 @@
       {
         "name": "content",
         "file": "content/content.js"
+      },
+      {
+        "name": "blog",
+        "file": "blog/blog.js"
       }
     ]
   }

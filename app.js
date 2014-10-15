@@ -1,23 +1,29 @@
-angular.module('lancecaraccioli.github.io', ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'content']);
+angular.module('lance.caraccioli.me', ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'blog']);
 
-angular.module('lancecaraccioli.github.io').config(function($stateProvider, $urlRouterProvider) {
+angular.module('lance.caraccioli.me').config(function($stateProvider, $urlRouterProvider) {
 
-    /* Add New States Above */
-    $urlRouterProvider.otherwise('/home');
+  $stateProvider.state('home', {
+    url: '/home'
+  });
+  $stateProvider.state('blog', {
+    url: '/blog',
+    template: '<ui-view></ui-view>'
+  });
+  /* Add New States Above */
+  $urlRouterProvider.otherwise('/home');
 
 });
 
-angular.module('lancecaraccioli.github.io').run(function($rootScope) {
-
-    $rootScope.safeApply = function(fn) {
-        var phase = $rootScope.$$phase;
-        if (phase === '$apply' || phase === '$digest') {
-            if (fn && (typeof(fn) === 'function')) {
-                fn();
-            }
-        } else {
-            this.$apply(fn);
-        }
-    };
+angular.module('lance.caraccioli.me').run(function($rootScope) {
+  $rootScope.safeApply = function(fn) {
+    var phase = $rootScope.$$phase;
+    if (phase === '$apply' || phase === '$digest') {
+      if (fn && (typeof(fn) === 'function')) {
+        fn();
+      }
+    } else {
+      this.$apply(fn);
+    }
+  };
 
 });
