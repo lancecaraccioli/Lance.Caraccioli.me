@@ -13,21 +13,34 @@ are made. Luckily a much better technology is available; Markdown.
 
 Markdown in a Nutshell
 ----------------------
-Its common place these days to see [Markdown][http://en.wikipedia.org/wiki/Markdown] (*.md files)
+Its common place these days to see [Markdown](http://en.wikipedia.org/wiki/Markdown "Wikipedia") (\*.md files)
 in almost any [git](http://git-scm.com/) repository. [GitHub](http://github.com), while not the first to use Markdown,
 certainly added to it's popularity by adopting a [flavor](https://help.github.com/articles/github-flavored-markdown/)
-of Markdown used to render *.md files in the browser to improve User experience. But Markdown is more than a convenient documentation
+of Markdown with popular extensions such as [Fensed Code Blocks](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks).
+But Markdown is more than a convenient documentation
 syntax. By design it's intended goal was to provide a writing syntax which was "easy-to-read, easy-to-write" and easily
 converted into HTML.
 
 Enter Our Copywriters
 -----------------------
-Most Copywriters I've worked with are familiar with Markdown. In any case it's easy to learn and Copywriters new to Markdown
+Markdown is an ideal syntax for these types of tools. Most Copywriters I've worked with are
+already familiar with Markdown. In any case it's easy to learn and Copywriters new to Markdown
 generally pick it up in a day. It's certainly easier to read and write and requires very little knowledge, if
 any, about html. What they still need however is a robust, real-time mechanism for updating
-Markdown based content. These types of features typically take lower priority living out their existence in the back log.
-The classical perspective is that Copywriters produce the words, while Front-End Engineers update the source code.
-I think we can improve upon this. I believe we collectively become more efficient by placing power tools in the hands of Copywriters.
+Markdown based content.
+
+The first action a User takes when visiting a new site is almost certainly to read. Copywriters therefore are crucial contributors
+to the User's first Impression. Knowing that the first impression is the most crucial, therefore we should aim to empower
+our Copywriters with as much agility as possible. It is painful for even us Engineers to see a landing page typo, which must
+wait for the standard release processes, no matter how fast they are before it's fixed.  This type of static content should
+be owned by the Copywriters, decoupled from the application, and necessitate either a separate deployment path (my preference)
+and/or administrative power tools.
+
+These types of features have historically taken lower priority with many living out their existence in the back log.
+The classical perspective enforces a strict separation between Copywriters and the product, and enforces a restrictive dependency
+on release processes, which often include rebuilding the entire application, though only static content changes are logically necessary.
+
+We collectively become more efficient by placing power tools in the hands of Copywriters.
 Initially Copywriters will have more freedom and agility allowing them to experiment more often and remain on task
 instead of waiting for Engineering cycles to become available. Likewise Engineering cycles otherwise required to make changes
 to static content can instead be spent on higher value items.
